@@ -1,0 +1,260 @@
+/* --------------------------------------------- */
+/* WooCommerce Custom Product Builders FrontEnd --------------------------------------------------------------------------------- */
+/* --------------------------------------------- */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.builder-product-page .woocommerce-Price-amount {
+    color: #C92626;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.builder-product-page .product-page-images {
+    max-width: 500px;
+    margin-right: auto;
+}
+
+.builder-product-page .product-page-summary {
+    width: 56%;
+}
+
+.builder-product-page-form fieldset {
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+
+.builder-product-page-form .required {
+    color: red;
+    font-weight: 800;
+    position: relative;
+    top: -3px;
+}
+
+.builder-option {
+    margin: 0.3rem 0;
+    display: flex;
+}
+
+.builder-option input {
+    width: 20px;
+    height: 20px;
+    margin: auto 0;
+}
+
+.builder-product-page-form legend {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+.builder-option label {
+    font-size: 18px;
+    padding-left: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-indent: unset;
+    margin-bottom: 0;
+}
+
+.builder-option-description {
+    font-size: 16px;
+}
+
+.wcpb-category-radio .builder-option {
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wcpb-category-radio .builder-option label {
+    padding: 1rem;
+    cursor: pointer;
+    text-indent: unset;
+    margin-bottom: 0;
+}
+
+.wcpb-category-radio .builder-option:has(input:checked) {
+    border: 3px solid #2358c8;
+}
+
+.wcpb-category-radio .builder-option input {
+    display: none;
+}
+
+.wcpb-category-checkbox .builder-option {
+    padding: 0 1rem;
+    padding-left: 0.5rem;
+}
+
+.builder-option label {
+    width: 100%;
+    display: flex;
+}
+
+.builder-option-text {
+    font-weight: 600;
+}
+
+.builder-option-price {
+    margin-left: auto;
+}
+
+.builder-add-to-cart {
+    margin-top: 1rem;
+}
+
+.wcpb-edit-category {
+    padding: 0.75rem 0 1rem 0;
+    border-bottom: 1px solid #AAA;
+}
+
+.wcpb-edit-label {
+    display: block;
+    font-weight: 500;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.builder-phone-btn {
+    width: 100%;
+    max-width: 175px;
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 0.5rem auto;
+    background-color: #10076d !important;
+    color: white;
+}
+
+.builder-phone-btn:hover, .builder-phone-btn:focus, .builder-phone-btn:active, .builder-phone-btn:visited {
+    color: white;
+}
+
+.radio-none-popup {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(0,0,0,.7);
+}
+
+.radio-popup-inner {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 1rem;
+    border:#10076d solid 3px;
+}
+
+.radio-none-popup-message {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.radio-popup-btns {
+    margin: auto;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.radio-none-btn {
+    margin: auto;
+    border: 1px solid;
+    width: 49%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.radio-none-btn.radio-none-btn-yes {
+    background-color: #3fa9f5;
+    color: white;
+    font-weight: 900;
+}
+
+.single_add_to_cart_button.wcpb-add-to-cart-btn {
+    border: 1px solid;
+    border-color: #ccc #ccc #bbb;
+    border-radius: 3px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.wcpb-add-to-cart-btn {
+    display: flex;
+}
+
+.wcpb-add-to-cart-btn span {
+    margin: auto;
+}
+
+.wcpb-starting-price span {
+    font-size: 1.5rem;
+}
+
+.wcpb-starting-price-label {
+    color: #C92626;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.builder-price-totals p {
+    padding: 0;
+    margin: 0;
+}
+
+.builder-price-totals p span {
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem !important;
+}
+
+.builder-price-totals {
+    margin: 2rem 0 1rem 0;
+}
+
+.builder-option-critical-info {
+    width: 100%;
+    display: flex;
+}
+
+
+
+
+/* --------------------------------------------- */
+/* ------------------------------------------------ Responsive Media Queries ---*/
+/* --------------------------------------------- */
+
+@media only screen and (max-width: 450px) {
+
+    .builder-product-page .product-page-summary {
+        width: 100%;
+    }
+
+    .builder-add-to-cart {
+        flex-wrap: wrap;
+    }
+
+    .builder-phone-btn {
+        max-width: unset;
+        margin: 0.5rem auto;
+    }
+
+}

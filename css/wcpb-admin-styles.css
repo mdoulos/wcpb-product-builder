@@ -1,0 +1,203 @@
+/* --------------------------------------------- */
+/* WooCommerce Custom Product Builders Admin --------------------------------------------------------------------------------- */
+/* --------------------------------------------- */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#postbox_for_wcpb label {
+    cursor: unset;
+    display: flex;
+}
+
+.wcpb-option-id {
+    font-weight: 400;
+    margin-left: auto;
+    position: relative;
+    top: -4px;
+}
+
+.wcpb-category-id {
+    text-align: right;
+    position: relative;
+    top: -5px;
+    right: 6px;
+}
+
+.wcpb-edit-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wcpb-edit-category {
+    width: 49.5%;
+    margin: 5px 0;
+    margin-right: auto;
+    margin-bottom: 0.75rem;
+}
+
+.wcpb-edit-category-inner {
+    padding: 5px;
+    background: #EEE;
+    border-radius: 5px;
+    border: 1px solid #777;
+    box-shadow: 1px 3px 10px #CCC;
+    display: flex;
+    flex-direction: column;
+}
+
+.wcpb-edit-field label, .wcpb-edit-categoriesheading label, .wcpb-edit-optionsheading label, .wcpb-edit-info label {
+    display: block;
+    font-weight: 700;
+    padding: 0;
+    margin: 0 0 3px;
+}
+
+.wcpb-edit-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+}
+
+.wcpb-edit-field input {
+    width: 100%;
+}
+
+.wcpb-edit-option {
+    border: 1px solid #555;
+    border-radius: 12px;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    background: #F9F9F9;
+    box-shadow: 3px 4px 6px #AAA;
+}
+
+.wcpb-edit-general {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.wcpb-edit-info {
+    width: 25%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 1rem 1rem 0 0;
+}
+
+.wcpb-edit-add-btn {
+    margin-top: 7px;
+    margin-left: 1px;
+    padding: 5px 10px;
+    background-color: #EEFFEE;
+    border: #229921 solid 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #AAA;
+}
+
+.wcpb-edit-remove-btn {
+    background-color: #FFDDDD;
+    border: 1px solid #992222;
+    border-radius: 4px;
+    color: #992222;
+    padding: 0 7px;
+    margin: 0 1px 0 2px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #AAA;
+}
+
+.wcpb-edit-optionsheading label {
+    padding: 0.5rem 0 0 0.3rem;
+}
+
+.wcpb-option-count-label {
+    margin-left: 4px;
+}
+
+.wcpb-edit-option-container {
+    padding: 0 0.3rem;
+}
+
+.wcpb-edit-removeoptionbutton {
+    display: flex;
+}
+
+.wcpb-edit-removeoptionbutton button {
+    margin: auto 0.3rem 0.33rem 1rem;
+    width: 125px;
+    padding: 0.34rem;
+    font-weight: 600;
+}
+
+.wcpb-edit-remove-btn:hover {
+    background-color: #FFCCCC;
+}
+
+.wcpb-edit-add-btn:hover {
+    background-color: #DDFFDD;
+}
+
+.wcpb-edit-addoptionbutton {
+    display: flex;
+}
+
+.wcpb-edit-addoptionbutton button {
+    margin: 0.75rem auto 0.25rem auto;
+    width: 150px;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+.wcpb-edit-addcategorybutton {
+    width: 100%;
+    display: flex;
+}
+
+.wcpb-edit-addcategorybutton button {
+    width: 250px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.wcpb-edit-general .wcpb-edit-field {
+    padding-left: 0;
+}
+
+.wcpb-edit-removecategorybutton {
+    display: flex;
+}
+
+.wcpb-edit-removecategorybutton button {
+    margin-top: auto;
+    margin-bottom: 0.33rem;
+    margin-right: 0.3rem;
+    width: 125px;
+    padding: 0.3rem 0.25rem 0.38rem 0.25rem;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 1200px) { 
+
+    .wcpb-edit-category {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) { 
+
+    .wcpb-edit-category {
+        padding: 0.75rem 0 1rem 0;
+        border-bottom: 1px solid #AAA;
+    }
+
+}
